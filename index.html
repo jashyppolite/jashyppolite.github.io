@@ -1,88 +1,140 @@
-<!DOCTYPE html> 
+<!doctype html>
 <html>
-<!-- link rel = "stylesheet" src = "mypagecss.css" -->
 <head>
-<title> J Hyppolite </title>
-
+<meta charset="utf-8">
+<title>J Hyppolite</title>
+</head>
 <style>
-body {
-	background-color:white;
-	background:#86D0CD;
-	font-family:Modern;
-	align-items:center;
-	overflow-x:auto;
-	
-	}
-	
-p {
-	text-align:center;
+body{
+background-color:#86D0CD;
+}
+.side{
+width:15%;
+float:left;
+min-width:250px;
+max-width:400px;
+height:500px;
+margin:0px auto;
+
+}
+.bottom{
+background-color:#86D0CF;
+width:100%;
+height:300px;
+margin-top:500px;
+text-align:center;
+}
+.main{
+margin-top:-10px;
+width:50%;
+float:left;
+min-width:575px;
+max-width:650px;
+height:500px;
+margin:0px auto;
+}
+.container{
+padding-left: 0px;
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
+width: 70%;
+min-width:850px;
+margin-left: auto;
+margin-right: auto;
+color:#FFFFFF;
+}
+.scrollText {
+font-family: Arial;
+color:black;
+font-size:20px;
+float: right;
+min-width:150px;
+width:60%;
+max-height:370px;
+overflow-y:auto;
+}
+.picture{
+float:left;
+min-width:150px;
+width:35%;
+}
+.box1atbottom {
+display:inline-block;
+height:200px;
+width:200px;
+margin-right:75px;
+margin-left:auto;
+background-color:white;
+}
+.box2atbottom {
+display:inline-block;
+height:200px;
+width:200px;
+margin-left:auto;
+background-color:white;
+margin-right:75px;
+}
+.box3atbottom {
+display:inline-block;
+height:200px;
+width:200px;
+margin-left:auto;
+background-color:white;
+}
+.box1{
+background-color:#FFFFFF;
+width:75px;
+height:75px;
+transform:rotate(-40deg) translate(-3px,3px);
+color:#000000;
+position:inherit;
+margin: 0px auto;
+}
+.box2{
+background-color:#FFFFFF;
+width:150px;
+height:75px;
+transform:translate(-95px,-65px) rotate(50deg);
+color:#000000;
+position:inherit;
+margin: 0px auto;
+}
+.box3{
+background-color:#FFFFFF;
+width:160px;
+height:75px;
+transform:translate(20px,-90px) rotate(-40deg);
+color:#000000;
+position:inherit;
+margin: 0px auto;
+}
+.box4{
+background-color:#FFFFFF;
+width:160px;
+height:75px;
+transform:translate(-105px,-130px) rotate(50deg);
+color:#000000;
+position:inherit;
+margin: 0px auto;
+}
+.box5{
+background-color:#FFFFFF;
+width:160px;
+height:75px;
+transform:translate(10px,-150px) rotate(-40deg);
+color:#000000;
+position:inherit;
+margin: 0px auto;
+}
+
+a{
 	color:black;
-	font-size:36px;
-		}
-h1 {
-	border-bottom-color:white;
-	border-bottom-width: 20px;
-	position: relative;
-	top: 50px;
-	padding: %50;
-	text-align :center;
-	color: black;
-	font-size: 36 px;
-	
-	}
-	
-h2 {
-	text-align: center;
-	color: black;
-	text-outline:#8ED8D2;
-}
-h3 { 
-	color: black;
-}
-.box1 {
-	transform: translate(65px,50px) rotate(45deg);
-	width: 165px;
-	height: 75px;
-	background-color:white;
-	
-}
-.box2 {
-	transform:rotate(135deg)translate(-135px,-129px);
-	width: 165px;
-	height: 75px;
-	background-color: white;
-}
-.box3 {
-	transform:rotate(45deg)translate(-74px,-165px);
-	width: 165px;
-	height: 75px;
-	background-color: white;
-}
-.box4 {
-	transform:rotate(135deg)translate(-130px,-131px);
-	width: 165px;
-	height: 75px;
-	background-color:white;
-	  }
-.square {
-	transform:rotate(45deg) translate(-158px,-445px);
-	width:75px;
-	height:83px;
-	background-image: url(lincoln.jpg.jpg);
-	background-size:cover;
-	background-repeat:no-repeat;
-	icon:url(prom.jpg)
-	}
-
-
-a {
 	text-decoration:none;
-	color:black;
-	padding-top: 15xp;
-	}
-a:hover{
-	color: #182FDF;
 }
+a:hover{
+	color:#070AA7;
+	}
 .box1:hover{
 	background-color:#A8DFC6;
 	}
@@ -95,137 +147,33 @@ a:hover{
 .box4:hover{
 	background-color:#A8DFC6;
 	}
-.square:hover{
+.box5:hover{
 	background-color:#A8DFC6;
 	}
-.box1atbottom:hover{
-	background-color:#A8DFC6;
-	}
-.box2atbottom:hover{
-	background-color:#A8DFC6;
-	}
-.box3atbottom:hover{
-	background-color:#A8DFC6;
-	}
-.box4atbottom:hover{
-	background-color:#A8DFC6;
-	}
-a:visited{
-	
-}
-.textnexttopic {
-	padding-top: 50px;
-	font-family: Arial;
-	color:black;
-	font-size:20px;
-	transform: translate(650px,-550px);
-	width:380px;
-	max-height:380px;
-	overflow-y:auto;
-	}
-	.rotatebackBOX2{
-		transform:rotate(-180deg)translate(0px,-17px);
-	}
-	
-	.rotatebackBOX4{
-		transform:rotate(-180deg)translate(0px,-15px);
-		}
-		
-	.toptext {
-		font-size:36px;
-	}
-	
-	.box1atbottom {
-		height:200px;
-		width:200px;
-		background-color:white;
-		float:left;
-		padding-left:15px;
-		/*transform: translate(100px,-500px);*/
-		}
-	.box2atbottom {
-		height:200px;
-		width:200px;
-		background-color:white;
-		float:left;
-		padding-left:15px;
-		/*transform: translate(400px,-700px);*/
-		}
-	.box3atbottom {
-		height:200px;
-		width:200px;
-		background-color:white;
-		float:left;
-		padding-left:15px;
-		/*transform: translate(700px,-900px);*/
-		}
-	.box4atbottom {
-		height:200px;
-		width:200px;
-		background-color:white;
-		float:left;
-		padding-left:15px;
-		/*transform: translate(1000px,-1100px);*/
-		}
-	.boxtext {
-		padding-top: 75px;
-		text-align:center;
-		font-size:18px;
-		font-family:sans-serif;
-		
-				}
-				footer{
-					width:100%;
-					bottom:0;
-					margin-bottom:0px;
-					vertical-align:bottom;
-					position:absolute;
-				}
+
 </style>
-<script>
-	function changepic () {
-		var image = document.getElementById("myFirstImage");
-			if (image.src.match("lincolnpic.jpg")){
-				image.src = 'prom.jpg';
-		}
-		else {
-			image.src = 'lincolnpic.jpg';
-			console.log("jazz");
-		}
-	}
-</script>
-</head>
-
-
- 
 <body>
-<h1>JASMINE HYPPOLITE</h1>
-<!-- <img src="lincolnpic.jpg" id="myFirstImage"/> -->
+<div class="container" >
+<h1 style="text-align:center;color:black;font-size:36px;">JASMINE HYPPOLITE</h1>
+    <div class="side" >
+    	<div class= "box1"> <p style = "font-family:sans-serif;font-size:24px; font-weight:bolder; text-align:center; padding-top:25px;"><a href="https:\\www.lincolnschool.org">2017</a></p> </div>
+        <div class ="box2"> <p style = "font-family:sans-serif;font-size:24px; font-weight:bolder; text-align:center; padding-top:25px;">ABOUT</p> </div>
+        <div class= "box3"> <p style = "font-family:sans-serif;font-size:24px; font-weight:bolder; text-align:center; padding-top:25px;">AWARDS </p> </div>
+        <div class= "box4"> <p style = "font-family:sans-serif;font-size:24px; font-weight:bolder; text-align:center; padding-top:25px;"><a href ="hobbies.html">HOBBIES</a></p></div>
+        <div class= "box5"> <p style = "font-family:sans-serif;font-size:24px; font-weight:bolder; text-align:center; padding-top:25px;">SUMMER </p> </div>
 
- <!-- <div class="container"> <p> this is my website. learn more </p> </div>-->
-<div class = "box1"> <p style="padding-top:16px">ABOUT</p> </div>
-<div class= "box2"> <p class="rotatebackBOX2">AWARDS </p> </div>
-<div class= "box4"> <p class="rotatebackBOX4" ><a href="hobbies.html">HOBBIES</a></p> </div>
-<div class= "box3"> <p style = "padding-top: 15px">SUMMER </p> </div>
-<div class = "square"><p style="padding-top: 20px"><a href="https:\\www.lincolnschool.org">2017</a></p></div>
-
- 
-<img src="lincolnpic.jpg" alt="myimage" id="myFirstImage" onClick="changepic()" style="float:right;width:15%;min-width:250px; padding-top:50px; padding-bottom:100px; padding-right:400px; transform:translate(-300px,-550px)" />
-
-
-<div class= "textnexttopic"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.  
+    </div>
+    <div class="main">
+    <img src="lincolnpic.jpg" alt="pictureome" id="myFirstImage" class="picture" onClick="changepic()" />
+    
+    <div class= "scrollText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie  </div>
+    </div>
 </div>
-
-<table align="center" >
-<tr>
-<td style="width:25%;min-width:300px;text-align:center"><div class="box1atbottom" align="center"><div class = "boxtext">Contact me at jashyppolite@gmail.com</div></div></td>
-<td style="width:25%;min-width:300px;text-align:center"><div class="box2atbottom" align="center"></div></td>
-<td style="width:25%;min-width:300px;text-align:center"><div class="box3atbottom" align="center"></div></td>
-<td style="width:25%;min-width:300px;text-align:center"><div class="box4atbottom" align="center"></div></td>
-</tr>
-</table>
+    <p>&nbsp;  </p>
+    <div class="bottom">
+    <div class="box1atbottom"><p style="text-align:center;padding-top:70px;font-weight:bold;font-family:sans-serif;">jashyppolite@gmail.com</p></div>
+    <div class="box2atbottom"><p style="text-align:center;padding-top:70px;font-weight:bold;font-family:sans-serif;"><a href="https://www.linkedin.com/in/jasmine-h-227799102?trk=nav_responsive_tab_profile_pic"> LinkedIn</a></p></div>
+    <div class="box3atbottom"><p style="text-align:center;padding-top:70px;font-weight:bold;font-family:sans-serif;"><a href="Resume (1).pdf">Resume</a></p></div>
+    </div>
 </body>
-
-
 </html>
